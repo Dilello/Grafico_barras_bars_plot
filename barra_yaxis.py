@@ -33,7 +33,7 @@ ch4_flux_pre = np.loadtxt("/home/marcelo/Documentos/projects/proj_sinop2/TXT/flu
 ch4_flux_pos = np.loadtxt("/home/marcelo/Documentos/projects/proj_sinop2/TXT/flux_pos.txt") # fluxo difusivo de metano pos-enchimento
 labelx = ['CAM 22', 'CAM 49', 'CAM 48', 'CAM 14', 'CAM 23.2', 'CAM 23.1', 'CAM 27', 'CAM 15', 'CAM 13', 'CAM 33', 'CAM 32', 'CAM 41', 'CAM S11', 'CAM 29', 'CAM S9', 'CAM S41', 'CAM 4', 'CAM S8.2', 'CAM 3', 'CAM S3', 'CAM 7', 'CAM S17', 'CAM S2', 'CAM 8', 'CAM S6.3', 'CAM S1.1', 'CAM 55', 'CAM S21', 'CAM 4.2', 'CAM S6', 'CAM S3', 'CAM 44', 'CAM 2', 'CAM 1', 'CAM S1.2']# código dos pontos de coleta que aparecerão no eixo x
 
-# Gráfico de fluxo difusão de metano
+# Gráfico de fluxo difusivo de metano
 fig, (ax, ax2) = plt.subplots(2, 1, sharex = True) # dimensiona o gráfico
 x = np.arange(len(labelx))  # define localização dos códigos dos pontos de coleta no eixo x
 y = np.array([100, 1000, 2000, 3000, 4000, 5000]) # define localização das labels do eixo y acima da quebra de escala
