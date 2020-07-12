@@ -29,8 +29,8 @@ plt.rc('ytick', labelsize = tamanho)
 plt.rc('figure', titlesize = tamanho) 
 
 # Variáveis de entrada
-ch4_flux_pre = np.loadtxt("/home/marcelo/Documentos/projects/proj_sinop2/TXT/flux_pre.txt") # fluxo difusivo de mentano pre-enchimento
-ch4_flux_pos = np.loadtxt("/home/marcelo/Documentos/projects/proj_sinop2/TXT/flux_pos.txt") # fluxo difusivo de metano pos-enchimento
+ch4_flux_pre = np.loadtxt("/home/marcelo/Documentos/projects/TXT/flux_pre.txt") # fluxo difusivo de mentano pre-enchimento
+ch4_flux_pos = np.loadtxt("/home/marcelo/Documentos/projects/TXT/flux_pos.txt") # fluxo difusivo de metano pos-enchimento
 labelx = ['CAM 22', 'CAM 49', 'CAM 48', 'CAM 14', 'CAM 23.2', 'CAM 23.1', 'CAM 27', 'CAM 15', 'CAM 13', 'CAM 33', 'CAM 32', 'CAM 41', 'CAM S11', 'CAM 29', 'CAM S9', 'CAM S41', 'CAM 4', 'CAM S8.2', 'CAM 3', 'CAM S3', 'CAM 7', 'CAM S17', 'CAM S2', 'CAM 8', 'CAM S6.3', 'CAM S1.1', 'CAM 55', 'CAM S21', 'CAM 4.2', 'CAM S6', 'CAM S3', 'CAM 44', 'CAM 2', 'CAM 1', 'CAM S1.2']# código dos pontos de coleta que aparecerão no eixo x
 
 # Gráfico de fluxo difusivo de metano
@@ -45,7 +45,7 @@ ax.bar(x + width/2, ch4_flux_pos, width, label='Pós-enchimento: 11/2012', color
 ax2.bar(x - width/2, ch4_flux_pre, width, color = 'g') # define a barra pré-enchimento acima da quebra de escala do eixo y
 ax2.bar(x + width/2, ch4_flux_pos, width, color = 'r',alpha=0.7) # define a barra pós-enchimento abaixo da quebra de escala do eixo y
 ax.axvspan(-0.40, 2.45, facecolor='b', alpha=0.10) # define o retângulo que agrupa os pontos no trecho afluente acima da quebra de escala do eixo y
-ax2.axvspan(-0.40, 2.45, facecolor='b', alpha=0.10) # ddefine o retângulo que agrupa os pontos no trecho afluente abaixo da quebra de escala do eixo y
+ax2.axvspan(-0.40, 2.45, facecolor='b', alpha=0.10) # define o retângulo que agrupa os pontos no trecho afluente abaixo da quebra de escala do eixo y
 ax.axvspan(11.55, 31.45, facecolor='b', alpha=0.10)  # define o retângulo que agrupa os pontos no trecho do reservatório acima da quebra de escala do eixo y
 ax2.axvspan(11.55, 31.45, facecolor='b', alpha=0.10) # define o retângulo que agrupa os pontos no trecho do reservatório abaixo da quebra de escala do eixo y
 ax.set_ylabel('Fluxo difusivo de CH'+r'$_{4}$'' (mg.m'+r'$^{-2}$''d'+r'$^{-1}$'')', position= (-10, 0.1)) # define a legenda do eixo y
