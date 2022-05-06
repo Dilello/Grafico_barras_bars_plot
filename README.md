@@ -1,4 +1,4 @@
-# Grafico_barras_bars_plot
+# Grafico de barra dupla com quebra de escala no eixo y
 Exemplo de gráfico de dupla barra com quebra de escala no eixo y, mudança de notação do separador decimal e de milhares, eixo x formado por códigos sem ordem numérica, agrupamento de pontos por cor (retângulo azul claro) e introdução de texto no gráfico.
 
 Neste exemplo, o gráfico mostra a comparação fluxo difusivo de metano no interface ar-água antes e depois do enchimento de um reservatório. O gráfico é formado por 35 pontos distribuídos no reservatório, dois trechos fluviais a montante e num trecho fluvial a jusante.
